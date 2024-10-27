@@ -1,4 +1,4 @@
-### Shopex-Shopping Platform
+# Shopex-Shopping Platform
 
 ---
 
