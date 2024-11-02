@@ -1,5 +1,21 @@
 # Shopex-Shopping Platform
 
+
+#### *Figma Link* ->  https://www.figma.com/design/fjq1TQE8ZPFLd8pvb3uBAv/Untitled?node-id=8-580&node-type=frame&t=3WE6gkiWQ8CYMOxN-0
+
+
+####  *Team Members and their domains*:
+
+1. Shubham Kumar(Leader) - Frontend
+2. Suyash Pandey - Frontend & Backend
+3. Aditya Gautam - Backend
+4. Kanhaiya Mandal - Product Design & UI
+5. Himanshu Raj - Frontend
+6. Shivam Kumar - Backend
+7. Suraj Kumar - Frontend
+
+
+
 ---
 
 ## 1. Overall Description
