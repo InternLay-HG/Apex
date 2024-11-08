@@ -43,10 +43,10 @@ function Navbar() {
 
 
                     </form>
-                    <div className={`${show ? "block" : "hidden"}  absolute bg-slate-600 px-4 w-24 sm:w-[17rem] mt-0`}>
+                    {/* <div className={`${show ? "block" : "hidden"}  absolute bg-slate-600 px-4 w-24 sm:w-[17rem] mt-0`}>
                         <p>eef</p>
                         <p>ffs</p>
-                    </div>
+                    </div> */}
                 </div>
             </NavLink>
 
