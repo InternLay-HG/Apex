@@ -24,7 +24,7 @@ function LatestCollection() {
 
             {/* rendering products */}
 
-            <div className='grid grid-cols-2 sm:grid-cols-3 md:grid-cols-3 lg:grid-cols-3 gap-y-6 gap-12 '>
+            <div className='grid grid-cols-2 sm:grid-cols-3 md:grid-cols-3 lg:grid-cols-3 gap-y-6 gap-4 sm:gap-12 '>
                 {
                     latestProducts12.map((item, index) => (
                         <ProductItemCard

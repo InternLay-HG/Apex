@@ -22,7 +22,7 @@ const BestSellerItems = () => {
                     />
 
                 </div>
-                <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-3 lg:grid-cols-3 gap-12 gap-y-6 place-items-center">
+                <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-3 lg:grid-cols-3 gap-4 sm:gap-12 gap-y-6 place-items-center">
                     {
                         bestSellerItem.map((item, index) => (
                             <ProductItemCard

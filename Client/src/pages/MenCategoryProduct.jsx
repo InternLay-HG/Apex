@@ -29,10 +29,10 @@ const MenCategoryProduct = () => {
 
         <div className='pt-8 mx-4 md:mx-20 '>
 
-            <div className='text-3xl text-center py-8'  >
+            <div className='text-3xl text-center pb-8'  >
                 <Title text={category.toUpperCase() + "'S " + productType.toUpperCase()} />
             </div>
-            <div className='grid grid-cols-1 sm:grid-cols-3 md:grid-cols-3 lg:grid-cols-3 gap-y-6 gap-12 place-items-center'>
+            <div className='grid grid-cols-2 sm:grid-cols-3 md:grid-cols-3 lg:grid-cols-3 gap-y-6 gap-4 sm:gap-12 place-items-center'>
 
                 {
                     filProducts.map((item, index) =>

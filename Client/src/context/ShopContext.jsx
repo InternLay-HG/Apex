@@ -3,6 +3,7 @@ import { products } from "../assets/assets"
 import { toast } from "react-toastify";
 import { menCategory } from "../assets/assets";
 import { womenCategory } from "../assets/assets";
+import { heroSectionImages } from "../assets/assets"
 
 export const ShopContext = createContext();
 
@@ -10,7 +11,7 @@ const ShopContextProvider = (props) => {
     const currency = "$";
     const delivery_fee = 10;
     const [search, setSearch] = useState('')
-    
+
     const [cartItems, setCartItems] = useState({});
 
     const addToCart = async (itemId, size) => {
@@ -59,6 +60,8 @@ const ShopContextProvider = (props) => {
 
 
     const value = {
+        heroSectionImages,
+
         products,
         menCategory,
         womenCategory,

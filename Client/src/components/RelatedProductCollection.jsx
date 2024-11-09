@@ -25,7 +25,7 @@ const RelatedProductCollection = ({ category }) => {
             <div className='text-center text-3xl my-8'>
                 <Title text={"RELATED PRODUCTS"} />
             </div>
-            <div className='grid grid-cols-2 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-3 gap-6 '>
+            <div className='grid grid-cols-2 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-3 gap-4 sm:gap-12 '>
                 {
                     relatedProduct.map((item, index) => (
                         <ProductItemCard

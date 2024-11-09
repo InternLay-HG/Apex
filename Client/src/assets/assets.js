@@ -56,7 +56,7 @@ import p_img52 from './p_img52.png'
 
 
 import logo from './logo.png'
-import hero_img from './hero_img.png'
+
 import cart_icon from './cart_icon.png'
 import bin_icon from './bin_icon.png'
 import dropdown_icon from './dropdown_icon.png'
@@ -68,7 +68,6 @@ import star_dull_icon from './star_dull_icon.png'
 import star_icon from './star_icon.png'
 import support_img from './support_img.png'
 import menu_icon from './menu_icon.png'
-import about_img from './about_img.png'
 import contact_img from './contact_img.png'
 import razorpay_logo from './razorpay_logo.png'
 import stripe_logo from './stripe_logo.png'
@@ -79,9 +78,13 @@ import icon_insta from "./icon_insta.png"
 import icon_facebook from "./icon_facebook.png"
 import icon_x from "./icon_x.png"
 
+import hero_section_1 from "./Hero Section/hero_section_1.webp"
+import hero_section_2 from "./Hero Section/hero_section_2.webp"
 
 
 //men category
+import mens_category from "./mens_category.webp"
+
 
 import man_hoodie from "../assets/Men Category/man-hoodie.avif"
 import men_shirt from "../assets/Men Category/men_shirt.jpg"
@@ -95,6 +98,8 @@ import men_polo from "../assets/Men Category/men_polo.webp"
 
 
 // women category
+import womens_category from "./womens_category.jpeg"
+
 import women_jeans from "../assets/Women Category/women_jeans.webp"
 import women_top from "../assets/Women Category/women_top.webp"
 import women_tshirt from "../assets/Women Category/women_tshirt.webp"
@@ -103,11 +108,12 @@ import women_shirt from "../assets/Women Category/women_shirt.webp"
 import women_sneaker from "../assets/Women Category/women_shoe.webp"
 import women_hoodie from "../assets/Women Category/women_hoodie.webp"
 
-
+// kid
+import kids_category from "./kids_category.jpg"
 
 export const assets = {
     logo,
-    hero_img,
+    
     cart_icon,
     dropdown_icon,
     exchange_icon,
@@ -119,7 +125,6 @@ export const assets = {
     bin_icon,
     support_img,
     menu_icon,
-    about_img,
     contact_img,
     razorpay_logo,
     stripe_logo,
@@ -130,11 +135,20 @@ export const assets = {
     icon_facebook,
     icon_x,
 
+    kids_category,
+    mens_category,
+    womens_category,
+
 
 
 
 
 }
+
+export const heroSectionImages=[
+    hero_section_1,
+    hero_section_2,
+]
 
 export const womenCategory = [
     {

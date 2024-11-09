@@ -5,11 +5,11 @@ import { Link } from "react-router-dom"
 const GenderCard = ({ image, title, gender }) => {
 
     return (
-        <div className='mb-2 '>
+        <div className='mb-2  '>
             <div className=''>
                 <Link to={`/${gender}`} className='relative flex flex-col items-center  '>
                     <div className=''>
-                        <img src={image} alt="h" className='' />
+                        <img src={image} alt="h" className='rounded-sm min-h-[16rem] ' />
                     </div>
                     <p className='font-extrabold border-2 border-slate-800 absolute bg-white text-black bottom-[-1rem] w-[80%] rounded-lg text-center pt-1 '>{title}</p>
 
