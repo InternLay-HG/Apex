@@ -32,7 +32,7 @@ const Product = () => {
   }, [productId, products])
 
   return productData ? (
-    <div className='border-t-2 pt-10 transition-opacity ease-in duration-500 opacity-100 mx-4 md:mx-16'>
+    <div className='pt-10 transition-opacity ease-in duration-500 opacity-100 mx-4 md:mx-16'>
       {/* product data  */}
       <div className='flex gap-12 sm:gap-12 flex-col sm:flex-row'>
         {/* images */}

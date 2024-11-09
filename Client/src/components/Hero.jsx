@@ -1,27 +1,70 @@
+import { useState } from "react";
+import { useContext } from "react";
+import { assets } from "../assets/assets"
+import { ShopContext } from "../context/ShopContext";
 
-import {assets} from "../assets/assets"
+
 function Hero() {
-    return (
-        <div className='flex flex-col sm:flex-row border border-gray-400'>
-            {/* hero left */}
+    const [currentIndex, setCurrentIndex] = useState(0);
 
-            <div className='w-full sm:w-1/2 flex items-center justify-center py-10 sm:py-0'>
-                <div className='text-[#414141] '>
-                    <div className='flex items-center gap-2'>
-                        <p className='w-8 md:w-11 h-[2px] bg-[#414141] '></p>
-                        <p className='font-medium text-sm md:text-base'>OUT BESTSELLER</p>
-                    </div>
-                </div>
-                <h1 className='text-3xl sm:py-3 lg:text-5xl leading-relaxed' >Latest Arrivals</h1>
-                <div className='flex items-center gap-2'>
-                    <p className='font-semibold text-sm md:text-base'>SHOP NOW</p>
-                    <p className='w-8 md:w-11 h-[2px] bg-[#414141] '></p>
-                </div>
+    const { heroSectionImages } = useContext(ShopContext);
+
+
+    const prevSlide = () => {
+        const isFirstSlide = currentIndex === 0;
+        const newIndex = isFirstSlide ? heroSectionImages.length - 1 : currentIndex - 1;
+        setCurrentIndex(newIndex);
+    };
+
+    const nextSlide = () => {
+        const isLastSlide = currentIndex === heroSectionImages.length - 1;
+        const newIndex = isLastSlide ? 0 : currentIndex + 1;
+        setCurrentIndex(newIndex);
+    };
+
+    return (
+
+        // <div className="mt-1 w-full">
+        //     <div >
+        //         <img src={assets.hero_small} srcSet={assets.hero_section_1} alt="" className="rounded-md cursor-pointer" />
+        //     </div>
+        // </div>
+
+
+
+        <div className="relative w-full pt-4 mx-auto">
+            {/* Slider Images */}
+            <div className="overflow-hidden relative">
+                {heroSectionImages.map((image, index) => (
+                    <img
+                        key={index}
+                        src={image}
+                        alt={`Slide ${index}`}
+                        className={`w-full object-cover transition duration-700 ease-in-out transform rounded-lg cursor-pointer ${index === currentIndex ? 'block' : 'hidden'
+                            }`}
+                    />
+                ))}
             </div>
-            {/* hero right */}
-            <img src={assets.hero_img} alt="" className="w-full sm:w-1/2" />
+
+            {/* Left Arrow */}
+            <button
+                onClick={prevSlide}
+                className="absolute top-1/2 left-2 transform -translate-y-1/2 bg-gray-800 text-white p-2 rounded-full hover:bg-gray-600"
+            >
+                ❮
+            </button>
+
+            {/* Right Arrow */}
+            <button
+                onClick={nextSlide}
+                className="absolute top-1/2 right-2 transform -translate-y-1/2 bg-gray-800 text-white p-2 rounded-full hover:bg-gray-600"
+            >
+                ❯
+            </button>
         </div>
-    )
-}
+    );
+};
+
+
 
 export default Hero

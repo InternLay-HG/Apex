@@ -6,8 +6,8 @@ import Title from "./Title"
 
 const Cateogary = () => {
     return (
-        <div className="mt-16 mb-8">
-            <div className='text-center text-3xl py-8'>
+        <div className="mt-8 mb-8">
+            <div className='text-center text-3xl pb-8'>
                 <Title
                     text={"LET YOU STYLE SPEAK"}
                 />
@@ -16,18 +16,18 @@ const Cateogary = () => {
                 <div>
                     <GenderCard
                         title={"MEN"}
-                        image={assets.about_img}
+                        image={assets.mens_category}
                         gender={"men"}
                     />
                 </div>
                 <div><GenderCard
                     title={"WOMEN"}
-                    image={assets.about_img}
+                    image={assets.womens_category}
                     gender={"women"}
                 /></div>
                 <div><GenderCard
                     title={"KIDS"}
-                    image={assets.about_img}
+                    image={assets.kids_category}
                     gender={"kids"}
                 /></div>
             </div>
