@@ -1,7 +1,7 @@
 # Shopex-Shopping Platform
 
 
-#### *Figma Link* ->  https://www.figma.com/design/fjq1TQE8ZPFLd8pvb3uBAv/Untitled?node-id=8-580&node-type=frame&t=3WE6gkiWQ8CYMOxN-0
+#### *Figma Link* ->  https://www.figma.com/design/eNNf05oy1llJmP3649tIYU/Untitled?node-id=9-2&t=BpzH2HW1D8Kxrud7-1
 #### *website deploymesnt Link* -> https://apex-project-ebon.vercel.app/
 
 
